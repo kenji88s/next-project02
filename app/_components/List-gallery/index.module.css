@@ -15,14 +15,14 @@
 }
 
 @media (max-width: 480px) {
-  #contents .gallery_list li {
+  .gallery_list li {
     width: 48%;
     margin: 0 4% 0 0;
   }
-  #contents .gallery_list li:nth-child(2n) {
+  .gallery_list li:nth-child(2n) {
     margin-right: 0;
   }
-  #contents .gallery_list li:nth-child(n+3) {
+  .gallery_list li:nth-child(n+3) {
     margin-top: 4%;
   }
 }

@@ -19,7 +19,7 @@
 }
 
 @media (max-width: 480px) {
-  #contents .table_base table td, #contents
+  .table_base table td,
   .table_base table th {
     padding: 12px;
     display: block;

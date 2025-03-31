@@ -15,14 +15,14 @@
 }
 
 @media (max-width: 480px) {
-  #contents .precedent_list li {
+  .precedent_list li {
     width: 48%;
     margin: 0 4% 0 0;
   }
-  #contents .precedent_list li:nth-child(2n), #contents .precedent_list li:last-child {
+  .precedent_list li:nth-child(2n), .precedent_list li:last-child {
     margin-right: 0;
   }
-  #contents .precedent_list li:nth-child(n + 3) {
+  .precedent_list li:nth-child(n + 3) {
     margin-top: 8%;
   }
 }

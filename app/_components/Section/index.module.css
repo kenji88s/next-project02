@@ -198,6 +198,7 @@ body[id*="inquiry2"] .section {
 .section > .section_inner > .section_title span.eng {
   font-size: 4.5rem;
   font-weight: 500;
+  display: block;
 }
 
 @media (max-width: 480px) {

@@ -447,12 +447,12 @@
   text-align: center;
 }
 
-#contents .inquiry-info {
+.inquiry-info {
   margin: 0;
   overflow: hidden;
 }
 
-#contents .inquiry-info li {
+.inquiry-info li {
   margin-right: 15px;
   float: left;
 }
