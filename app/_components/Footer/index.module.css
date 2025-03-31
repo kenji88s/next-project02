@@ -138,3 +138,9 @@
     font-size: 2vw;
   }
 }
+
+
+#index .footer,
+body[id*="contents"] .footer {
+  border-top: none;
+}

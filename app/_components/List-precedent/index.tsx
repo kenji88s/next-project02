@@ -15,7 +15,7 @@ export default function Precedent() {
                         <div className={styles.image}><Image src={photo.src} width={480} height={320} alt="" /></div>
                         <div className={styles.title}>{photo.caption}</div>
                     </li>
-                ))};
+                ))}
             </ul>
         </Section>
     );

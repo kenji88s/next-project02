@@ -28,8 +28,8 @@ export default function Aboutus() {
                     <dd>{CompanyInfo.contents["電話番号"]}</dd>
                 </dl>
                 <ul className={styles.top_aboutus_btn}>
-                    <li><Link href="/greeting"><span className={styles.eng}>COMPANY</span><span className={styles.arrow}></span></Link></li>
-                    <li><Link href="/accesss"><span className={styles.eng}>ACCESS</span><span className={styles.arrow}></span></Link></li>
+                    <li><Link href="/greeting"><span className={`eng ${poppins.className}`}>COMPANY</span><span className={styles.arrow}></span></Link></li>
+                    <li><Link href="/accesss"><span className={`eng ${poppins.className}`}>ACCESS</span><span className={styles.arrow}></span></Link></li>
                 </ul>
             </div>
         </section>

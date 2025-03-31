@@ -50,11 +50,12 @@ export const viewport = {
   userScalable: "no",
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+type Props = Readonly<{
+  id?: string;
   children: React.ReactNode;
-}>) {
+}>;
+
+export default function RootLayout({ id, children }: Props) {
   return (
     <html lang="ja" className={`${notoSansJP.className}`}>
       <Body>
