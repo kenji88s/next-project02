@@ -13,7 +13,7 @@ export default function Technique() {
                         <div className={styles.title}><span className={styles.kanji}>{detail.kanji}</span></div>
                         <div className={styles.msg}>{detail.msg}</div>
                     </li>
-                ))};
+                ))}
             </ul>
         </Section>
     );

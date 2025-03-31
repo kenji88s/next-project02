@@ -31,7 +31,7 @@ export default function Gallery() {
                             />
 
                             </li>
-                    ))};
+                    ))}
                 </ul>
             </Section>
 
