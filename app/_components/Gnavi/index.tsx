@@ -56,7 +56,7 @@ export default function HeaderNav() {
 
   return (
     <>
-      <nav id="gnavi" className={isMobile ? styles.mobile-nav : styles.desktop-nav}>
+      <nav id="gnavi" className={isMobile ? styles.mobileNav : styles.desktopNav}>
         <ul>
           {pages.map((btn, index) => (
               <li key={index}><Link href={btn.href}>{btn.title}</Link></li>
