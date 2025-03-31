@@ -48,7 +48,7 @@
 }
 
 .return a::before {
-  background: url(../img/overlay.png) repeat center center #000000;
+  background: url(/overlay.png) repeat center center #000000;
   z-index: -1;
   opacity: 0.75;
 }
