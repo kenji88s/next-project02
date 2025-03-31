@@ -10,7 +10,7 @@ export default function Aboutus() {
     return (
         <section className={styles.top_aboutus}>
             <div className={styles.top_aboutus_inner}>
-                <h1 className={styles.top_aboutus_title}><span className={`${styles.eng} ${poppins.className}`}>About Us</span><span className="jpn">バイナリールートについて</span></h1>
+                <h1 className={styles.top_aboutus_title}><span className={`eng ${poppins.className}`}>About Us</span><span className="jpn">バイナリールートについて</span></h1>
                 <div className={styles.top_aboutus_map}>
                     <Image
                         src="/top_aboutus_map.png"

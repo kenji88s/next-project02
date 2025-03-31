@@ -35,17 +35,13 @@
   margin-top: 30px;
 }
 
-.gallery_list a {
-  display: block;
+.gallery_list li > div{
+  position: relative;
+  overflow: hidden;
   background: url(/overlay.png) #000000;
 }
 
-.gallery_list a[rel*="shadowbox"] {
-  position: relative;
-  overflow: hidden;
-}
-
-.gallery_list a[rel*="shadowbox"]::after {
+.gallery_list li > div::after {
   position: absolute;
   content: "\ff0b";
   width: 30px;
@@ -72,7 +68,7 @@
 }
 
 @media (max-width: 480px) {
-  .gallery_list a[rel*="shadowbox"]::after {
+  .gallery_list li > div::after {
     width: 24px;
     height: 24px;
     font-size: 16px;
@@ -80,33 +76,30 @@
   }
 }
 
-.gallery_list a[rel*="shadowbox"]:hover img {
+.gallery_list li > div > img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .gallery_list li > div > img {
+    -webkit-transition: unset;
+    transition: unset;
+  }
+}
+
+.gallery_list li > div:hover img {
   opacity: 0.6;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
 @media (max-width: 480px) {
-  .gallery_list a[rel*="shadowbox"]:hover img {
+  .gallery_list li > div:hover img {
     opacity: 1;
     -webkit-transform: unset;
             transform: unset;
   }
-}
-
-.gallery_list a[rel*="shadowbox"] img {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-@media (max-width: 480px) {
-  .gallery_list a[rel*="shadowbox"] img {
-    -webkit-transition: unset;
-    transition: unset;
-  }
-}
-
-.gallery_list li img {
-  display: block;
-  width: 100%;
 }

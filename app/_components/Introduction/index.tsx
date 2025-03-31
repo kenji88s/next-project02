@@ -19,7 +19,7 @@ export default function Introduction({ eng, jpn, lead, children }: Props) {
           <span className={styles.jpn}>{jpn}</span>
         </div>
         <div className={styles.introduction_section_contents}>
-          {lead && <p className={styles.pick_text} >{lead}</p>}
+          {lead && <p className={styles.pick_text} dangerouslySetInnerHTML={{ __html: lead }} />}
           {children}
         </div>
       </div>
