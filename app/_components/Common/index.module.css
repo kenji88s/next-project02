@@ -1,0 +1,125 @@
+.contents_header {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 100px;
+}
+
+@media (max-width: 480px) {
+  .contents_header {
+    background: url(/visual_image-sp.jpg) no-repeat top center;
+    background-size: 100% auto;
+    padding-top: 0;
+  }
+}
+
+.contents_header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 0;
+  height: 960px;
+  background: url(/visual_image-pc.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+@media (max-width: 480px) {
+  .contents_header::after {
+    content: none;
+  }
+}
+
+.contents_header .head_inner {
+  margin: 0 auto;
+  width: 1020px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 220px;
+  padding: 40px 0;
+}
+
+@media (max-width: 480px) {
+  .contents_header .head_inner {
+    min-height: 40vw;
+    padding: 3vw;
+    width: 100%;
+  }
+}
+
+.contents_header .head_inner .title {
+  line-height: 1.3;
+  color: #fff;
+}
+
+.contents_header .head_inner .title span {
+  display: block;
+}
+
+.contents_header .head_inner .title span.eng {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .contents_header .head_inner .title span.eng {
+    font-size: 5.5vw;
+    margin-bottom: 5px;
+  }
+}
+
+.contents_header .head_inner .title span.jpn {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 480px) {
+  .contents_header .head_inner .title span.jpn {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+}
+
+.breadcrumbs {
+  margin: 0 auto;
+  width: 1020px;
+  padding: 5px 0;
+}
+
+@media (max-width: 480px) {
+  .breadcrumbs {
+    width: 100%;
+    padding: 5px 4vw;
+  }
+}
+
+.breadcrumbs ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.breadcrumbs ul li {
+  font-size: 1.3rem;
+  margin-right: 5px;
+  float: left;
+}
+
+.breadcrumbs ul li a {
+  margin-right: 4px;
+  display: inline-block;
+}
+
+.breadcrumbs ul li a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .breadcrumbs ul li a:hover {
+    text-decoration: underline;
+  }
+}

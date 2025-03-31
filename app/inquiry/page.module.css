@@ -1,0 +1,574 @@
+
+.inquiry_info {
+  text-align: center;
+}
+
+.inquiry_info .set {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (max-width: 480px) {
+  .inquiry_info .set {
+    display: block;
+  }
+}
+
+.inquiry_info .set:not(:last-child) {
+  margin-right: 100px;
+}
+
+@media (max-width: 480px) {
+  .inquiry_info .set:not(:last-child) {
+    margin: 0 0 40px;
+  }
+}
+
+.inquiry_info .no {
+  margin-bottom: 20px;
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: bold;
+  color: #2f9649;
+}
+
+@media (max-width: 480px) {
+  .inquiry_info .no {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+}
+
+.inquiry_info .no span {
+  font-size: 65%;
+  color: #000;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.inquiry_info .no a {
+  color: #186e40;
+}
+
+.inquiry_info .list li {
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .inquiry_info .list li {
+    display: block;
+  }
+}
+
+.inquiry_info .list li:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (max-width: 480px) {
+  .inquiry_info .list li:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.attent_block {
+  margin-bottom: 20px;
+}
+
+.attent_block .title {
+  font-size: 1.6rem;
+  border-bottom: 1px solid #333;
+  margin: 0 0 10px;
+  padding: 5px 0;
+}
+
+.attent_block .title:before {
+  content: "■";
+  font: normal normal normal 18px/1 FontAwesome;
+  margin-right: 6px;
+}
+
+.attent_block a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  .attent_block a:hover {
+    text-decoration: underline;
+    color: inherit;
+  }
+}
+
+.thanks_title {
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.thanks_msg {
+  text-align: center;
+  line-height: 2;
+}
+
+@media (max-width: 480px) {
+  .thanks_msg {
+    text-align: left;
+  }
+}
+
+.thanks_msg p {
+  margin-bottom: 20px;
+}
+
+#MailForm span.any,
+#MailForm span.required {
+  color: #fff;
+  font-size: 85%;
+  border-radius: 3px;
+  margin-right: 10px;
+  padding: 2px 4px;
+}
+
+#MailForm span.required {
+  background: #9b0000;
+}
+
+#MailForm span.any {
+  background: #999;
+}
+
+#MailForm input,
+#MailForm textarea {
+  color: #444;
+  font-size: 1.5rem;
+  font-family: "メイリオ";
+  letter-spacing: 1px;
+  line-height: 1.4;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  #MailForm input,
+  #MailForm textarea {
+    width: 100%;
+  }
+}
+
+#MailForm select {
+  font-size: 1.5rem;
+  border: 1px solid #e1e1e1;
+  padding: 3px 27px 3px 13px;
+  background: url("/select-arrow.png") no-repeat center right 7px/9% #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media all and (-ms-high-contrast: none) {
+  #MailForm select {
+    background: none;
+    padding-right: 13px;
+  }
+}
+
+#MailForm label {
+  padding: 2px 0;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+@media (max-width: 480px) {
+  #MailForm label {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    line-height: 1.4;
+  }
+}
+
+#MailForm label input[type="radio"] {
+  margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+  #MailForm label input[type="radio"] {
+    width: auto;
+    position: relative;
+    top: 3px;
+    outline: none;
+  }
+}
+
+#MailForm label input[type="checkbox"] {
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  #MailForm label input[type="checkbox"] {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #MailForm input[type="submit"],
+  #MailForm input[type="button"] {
+    border-radius: 0;
+    -webkit-box-sizing: content-box;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+         appearance: button;
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  #MailForm input[type="submit"]::-webkit-search-decoration,
+  #MailForm input[type="button"]::-webkit-search-decoration {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #MailForm input[type="submit"]:focus,
+  #MailForm input[type="button"]:focus {
+    outline-offset: -2px;
+  }
+}
+
+#MailForm .form3 {
+  vertical-align: middle;
+  width: 3%;
+}
+
+#MailForm .form25 {
+  width: 25%;
+}
+
+@media (max-width: 480px) {
+  #MailForm .form25 {
+    width: 100%;
+  }
+}
+
+#MailForm .form45 {
+  width: 45%;
+}
+
+@media (max-width: 480px) {
+  #MailForm .form45 {
+    width: 100%;
+  }
+}
+
+#MailForm .form60 {
+  width: 60%;
+}
+
+@media (max-width: 480px) {
+  #MailForm .form60 {
+    width: 100%;
+  }
+}
+
+#MailForm .form90 {
+  width: 93%;
+}
+
+@media (max-width: 480px) {
+  #MailForm .form90 {
+    width: 100%;
+  }
+}
+
+#MailForm .focus {
+  background: #ffe7e0;
+}
+
+#MailForm .important_text {
+  line-height: 1.4;
+  margin-bottom: 27px;
+}
+
+#MailForm .inquiry_inset {
+  margin-bottom: 25px;
+}
+
+#MailForm .confirm_txt {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  #MailForm .confirm_txt {
+    text-align: left;
+  }
+}
+
+#MailForm .important_list {
+  margin-bottom: 40px;
+}
+
+#MailForm .important_list li {
+  text-indent: -16px;
+  padding-left: 16px;
+}
+
+#MailForm .important_list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+  #MailForm .important_list li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #MailForm .important_list li {
+    text-indent: -17px;
+    padding-left: 17px;
+  }
+}
+
+.send_btn_inner {
+  padding: 30px 0 0;
+}
+
+@media (max-width: 480px) {
+  .send_btn_inner {
+    padding-top: 15px;
+  }
+}
+
+.send_btn_inner button {
+  width: 400px;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  letter-spacing: 1.5px;
+  padding: 17px 72px 18px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#008e8a), to(#cd16fb));
+  background-image: linear-gradient(90deg, #008e8a 0%, #cd16fb 100%);
+  border: none;
+  display: table;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  font-family: "Noto Sans JP", sans-serif, "Arial", "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
+}
+
+@media (max-width: 480px) {
+  .send_btn_inner button {
+    width: 100%;
+    padding: 14px 20vw 15px;
+    font-size: 1.5rem;
+  }
+}
+
+.send_btn_inner button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: unset;
+  bottom: 0;
+  top: 0;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 480px) {
+  .send_btn_inner button::after {
+    content: none;
+  }
+}
+
+.send_btn_inner button:hover::after {
+  opacity: 1;
+}
+
+.send_btn_inner button:hover span.arrow {
+  background-position: left 10px center;
+}
+
+@media (max-width: 480px) {
+  .send_btn_inner button:hover span.arrow {
+    background-position: left center;
+  }
+}
+
+.send_btn_inner button span.arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 65px;
+  background: url(/arrow01.png) no-repeat left center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 480px) {
+  .send_btn_inner button span.arrow {
+    width: 10vw;
+    right: 5vw;
+    background-size: 100% auto;
+    -webkit-transition: unset;
+    transition: unset;
+  }
+}
+
+.inputarea li {
+  margin: 0 15px 0 0;
+  float: left;
+}
+
+@media (max-width: 480px) {
+  .inputarea li {
+    margin: 0 15px 0 0;
+    float: left;
+  }
+}
+
+#thanks p {
+  line-height: 300px;
+  text-align: center;
+}
+
+#contents .inquiry-info {
+  margin: 0;
+  overflow: hidden;
+}
+
+#contents .inquiry-info li {
+  margin-right: 15px;
+  float: left;
+}
+
+.send_inner {
+  padding: 12px 0 20px;
+}
+
+.send_inner .send_step_msg {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.send_guide_msg {
+  color: #444;
+  text-align: center;
+  padding: 0 0 15px;
+}
+
+.send_inner .send_btn_inner {
+  text-align: center;
+}
+
+.send_inner .send_btn_inner .send_btn {
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 0;
+  margin: 0 10px;
+  padding: 15px 30px;
+  background: #ff9900;
+  display: inline-block;
+}
+
+.send_inner .send_btn_inner .btn_return {
+  background: #797979;
+}
+
+.send_confirm_table {
+  padding: 17px 0 30px;
+}
+
+.send_confirm_table table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media (max-width: 480px) {
+  .send_confirm_table table {
+    width: 100%;
+  }
+}
+
+.send_confirm_table table td,
+.send_confirm_table table th {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  padding: 17px 20px;
+  background: #fff;
+}
+
+@media (max-width: 480px) {
+  .send_confirm_table table td,
+  .send_confirm_table table th {
+    border: 0 solid #ccc;
+    padding: 17px 20px;
+    background: #fff;
+    display: block;
+  }
+}
+
+.send_confirm_table table th {
+  width: 40%;
+  background: #f5f5f5;
+}
+
+@media (max-width: 480px) {
+  .send_confirm_table table th {
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    background: #f5f5f5;
+  }
+}
+
+@media (max-width: 480px) {
+  .send_confirm_table table td {
+    margin-bottom: 30px;
+  }
+}
+
+.send_inner .send_error {
+  padding: 15px 0 30px;
+}
+
+.send_inner .send_error li {
+  font-size: 1.4rem;
+  padding: 5px 0;
+}
+
+.send_inner .send_error li:before {
+  color: #c2c2c2;
+  font-size: 85%;
+  font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+  margin-right: 8px;
+  content: "\0025cf";
+}
+
+.send_inner .send_error li span {
+  color: #ff3333;
+  margin-right: 5px;
+  display: inline-block;
+}

@@ -1,0 +1,90 @@
+
+.privacy_section {
+  padding: 50px 0 70px;
+  background: url(/background_img01.png) no-repeat left bottom #fff;
+}
+
+@media (max-width: 480px) {
+  .privacy_section {
+    padding: 10vw 0;
+    background-size: 80% auto;
+  }
+}
+
+.privacy_section .privacy_section_inner {
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+@media (max-width: 480px) {
+  .privacy_section .privacy_section_inner {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+}
+
+.privacy_section .privacy_section_inner .privacy_set {
+  margin-bottom: 20px;
+}
+
+.privacy_section .privacy_section_inner .privacy_set .privacy_set_title {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #000;
+}
+
+.privacy_section .privacy_section_inner .privacy_set .privacy_set_title::first-letter {
+  font-family: "Noto Serif JP", serif;
+  font-style: oblique;
+}
+
+@media (max-width: 480px) {
+  .privacy_section .privacy_section_inner .privacy_set .privacy_set_title {
+    margin-bottom: 20px;
+  }
+}
+
+.privacy_section .privacy_section_inner .privacy_set .privacy_set_inner {
+  padding: 0 10px 15px;
+}
+
+@media (max-width: 480px) {
+  .privacy_section .privacy_section_inner .privacy_set .privacy_set_inner {
+    padding: 0 5px 15px;
+  }
+}
+
+.privacy_section .privacy_section_inner .privacy_set .privacy_set_inner ul.privacy_list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .privacy_section .privacy_section_inner .privacy_set .privacy_set_inner ul.privacy_list li {
+    text-indent: -45px;
+    margin-bottom: 10px;
+    padding-left: 35px;
+  }
+}
+
+.privacy_section .privacy_section_inner .privacy_set .privacy_set_inner dl.privacy_item dt {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 480px) {
+  .privacy_section .privacy_section_inner .privacy_set .privacy_set_inner dl.privacy_item dt {
+    margin-bottom: 10px;
+  }
+}
+
+.privacy_section .privacy_section_inner .privacy_set .privacy_set_inner dl.privacy_item dd {
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+@media (max-width: 480px) {
+  .privacy_section .privacy_section_inner .privacy_set .privacy_set_inner dl.privacy_item dd {
+    margin-bottom: 30px;
+    padding-left: 0;
+  }
+}

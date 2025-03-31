@@ -1,0 +1,358 @@
+
+#page {
+  margin: 0 auto;
+  width: auto;
+  position: relative;
+}
+
+@media (max-width: 480px) {
+  #page {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #page.open {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: fixed;
+    -webkit-transform: translate3d(-80%, 0, 0);
+    transform: translate3d(-80%, 0, 0);
+  }
+}
+
+
+@media (max-width: 480px) {
+  #page + #gnavi {
+    border-top: inherit;
+    border-bottom: inherit;
+    padding: 15vw 5%;
+    height: 100%;
+    width: 80%;
+    min-width: 80%;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    right: -80%;
+    top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    z-index: 1;
+  }
+  #page + #gnavi::after {
+    background: url(/overlay.png) #000000;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.85;
+  }
+  #page + #gnavi > ul {
+    margin-bottom: 15px;
+  }
+  #page + #gnavi li {
+    margin-bottom: 15px;
+  }
+  #page + #gnavi a {
+    padding: 14px 10px;
+    border-bottom: 1px dashed #fff;
+    color: #fff;
+    line-height: 1.8;
+    display: block;
+    font-size: 1.45rem;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  #page + #gnavi a[href="inquiry.html"] {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTEuOTA3cHgiIGhlaWdodD0iMjAuNDFweCIgdmlld0JveD0iMCAwIDExLjkwNyAyMC40MSI+DQo8cGF0aCBpZD0iYXJyb3ciIGZpbGw9IiNGRkZGRkYiIGQ9Ik00LjcxOSwyMC40MUgtMC4wMUw3LjE2NSwxMC4yTC0wLjAxMS0wLjAxaDQuNzI5bDcuMjAxLDEwLjIxTDQuNzE5LDIwLjQxeiIvPg0KPC9zdmc+") no-repeat right 10% center #000;
+    background-size: 7px auto;
+    border: none;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  }
+  #page + #gnavi #close {
+    font-size: 1.5rem;
+    background: -webkit-gradient(linear, left top, right top, from(#008e8a), to(#cd16fb));
+    background: linear-gradient(90deg, #008e8a 0%, #cd16fb 100%);
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  }
+  #page + #gnavi #close span {
+    font-size: 1.5rem;
+    font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+  }
+}
+
+@media (max-width: 480px) {
+  #drawer_underlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+}
+
+@media (max-width: 480px) {
+  #gnavi.open {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+
+
+#sp_navi {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #sp_navi {
+    display: block;
+  }
+}
+
+#sp_navi img {
+  display: block;
+  height: 13vw;
+}
+
+
+@media (max-width: 480px) {
+  #page #gnavi {
+    display: none;
+  }
+}
+
+#page #gnavi ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page #gnavi li:not(:last-child) {
+  margin-right: 30px;
+}
+
+#page #gnavi a {
+  color: #fff;
+  padding: 5px;
+  min-height: 32px;
+  line-height: 1.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+#page #gnavi a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  opacity: 0;
+  height: 0;
+  bottom: -15px;
+  border: 1px solid #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 480px) {
+  #page #gnavi a::after {
+    content: none;
+  }
+}
+
+#page #gnavi a:hover::after {
+  right: 0;
+  opacity: 1;
+}
+
+#page #gnavi a[href*="inquiry"] {
+  background-image: -webkit-gradient(linear, left top, right top, from(#008e8a), to(#cd16fb));
+  background-image: linear-gradient(90deg, #008e8a 0%, #cd16fb 100%);
+  min-height: 100px;
+  width: 160px;
+}
+
+#page #gnavi a[href*="inquiry"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: unset;
+  bottom: 0;
+  top: 0;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 480px) {
+  #page #gnavi a[href*="inquiry"]::after {
+    content: none;
+  }
+}
+
+#page #gnavi a[href*="inquiry"]:hover::after {
+  opacity: 1;
+}
+
+#index .footer,
+body[id*="contents"] .footer {
+  border-top: none;
+}
+
+
+.txt_c {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .txt_c {
+    text-align: left;
+  }
+}
+
+.txt_r {
+  text-align: right;
+}
+
+.only_pc {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .only_pc {
+    display: none;
+  }
+}
+
+.only_sp {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .only_sp {
+    display: block;
+  }
+}
+
+.tel a {
+  color: #2d3e50;
+  text-decoration: none;
+  cursor: inherit;
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .tel a {
+    pointer-events: inherit;
+  }
+}
+
+.fade_hover a {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+@media (max-width: 480px) {
+  .fade_hover a {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.fade_hover a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+  .fade_hover a:hover {
+    opacity: 1;
+  }
+}
+
+.btn_base {
+  margin: 0 auto;
+  width: 400px;
+}
+
+@media (max-width: 480px) {
+  .btn_base {
+    width: 90%;
+  }
+}
+
+.btn_base a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 0;
+  background: #247231;
+  display: block;
+}
+
+.btn_base a:hover {
+  background: #6fba2c;
+}
+
+@media (max-width: 480px) {
+  .btn_base a:hover {
+    background: #247231;
+  }
+}
+
+.everywhere_block {
+  text-align: center;
+  line-height: 2.2;
+  margin: 0 auto 50px;
+  max-width: 1020px;
+}
+
+@media (max-width: 480px) {
+  .everywhere_block {
+    text-align: left;
+    line-height: 1.8;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    max-width: 100%;
+  }
+}

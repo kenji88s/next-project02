@@ -1,0 +1,33 @@
+h1[class*="top_"] {
+  display: table;
+  line-height: 1.4;
+}
+
+h1[class*="top_"] span {
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(#008e8a), to(#cd16fb));
+  background: linear-gradient(90deg, #008e8a 0%, #cd16fb 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1[class*="top_"] span.eng {
+  font-size: 8.5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  h1[class*="top_"] span.eng {
+    font-size: 4.5rem;
+  }
+}
+
+h1[class*="top_"] span.jpn {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 480px) {
+  h1[class*="top_"] span.jpn {
+    font-size: 1.7rem;
+  }
+}

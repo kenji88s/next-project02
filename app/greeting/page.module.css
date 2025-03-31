@@ -1,0 +1,84 @@
+
+.table_base {
+  padding: 0 0 25px;
+}
+
+.table_base table {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .table_base table {
+    border: none;
+  }
+}
+
+.table_base table td,
+.table_base table th {
+  padding: 25px 40px;
+}
+
+@media (max-width: 480px) {
+  #contents .table_base table td, #contents
+  .table_base table th {
+    padding: 12px;
+    display: block;
+    width: 100%;
+  }
+}
+
+.table_base table td {
+  border-bottom: 1px solid #999;
+}
+
+@media (max-width: 480px) {
+  .table_base table td {
+    border: none;
+  }
+}
+
+.table_base table td span.map_jump {
+  margin-left: 10px;
+  position: relative;
+  top: -2px;
+}
+
+.table_base table td span.map_jump a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 2px 6px;
+  background: -webkit-gradient(linear, left top, right top, from(#008e8a), to(#cd16fb));
+  background: linear-gradient(90deg, #008e8a 0%, #cd16fb 100%);
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.table_base table td span.map_jump a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+  .table_base table td span.map_jump a:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .table_base table tbody tr {
+    display: block;
+  }
+  .table_base table tbody tr:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.table_base table tbody th {
+  text-align: left;
+  width: 28%;
+  position: relative;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
