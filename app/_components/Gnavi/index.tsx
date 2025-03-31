@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import PagesInfo from "../../_data/info-pages";
+import styles from "./index.module.css";
 
 /* 該当するボタンのみ取得 */
 const pages: { href: string; title: string }[] = [];
@@ -55,7 +56,7 @@ export default function HeaderNav() {
 
   return (
     <>
-      <nav id="gnavi" className={isMobile ? "mobile-nav" : "desktop-nav"}>
+      <nav id="gnavi" className={isMobile ? styles.mobile-nav : styles.desktop-nav}>
         <ul>
           {pages.map((btn, index) => (
               <li key={index}><Link href={btn.href}>{btn.title}</Link></li>
