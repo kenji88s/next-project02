@@ -8,7 +8,7 @@ import { contPrecedent } from "../../_data/info-service";
 
 export default function Precedent() {
     return (
-        <Section id="jump01" eng="Precedent" jpn="デザイン事例" msg="観客へどのようなメッセージを伝えたいか・どのような空間や時間を創りたいのかなど、「想い」を共有しながら舞台照明デザインに落とし込んでいきます。">
+        <Section id="jump01" eng="Precedent" jpn="デザイン事例" wrap={true} msg="観客へどのようなメッセージを伝えたいか・どのような空間や時間を創りたいのかなど、「想い」を共有しながら舞台照明デザインに落とし込んでいきます。">
             <ul className={styles.precedent_list}>
                 {contPrecedent.contents.map((photo, index) => (
                     <li key={index}>

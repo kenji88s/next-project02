@@ -147,12 +147,12 @@ body[id*="inquiry2"] .section {
   background: #fff !important;
 }
 
-.breadcrumbs + .section {
+div[class*="breadcrumbs"] + .section {
   padding-top: 60px;
 }
 
 @media (max-width: 480px) {
-  .breadcrumbs + .section {
+  div[class*="breadcrumbs"] + .section {
     padding-top: 10vw;
   }
 }

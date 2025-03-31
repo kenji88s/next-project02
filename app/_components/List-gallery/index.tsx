@@ -18,7 +18,7 @@ export default function Gallery() {
 
     return (
         
-            <Section id="jump03" eng="Gallery" jpn="ギャラリー">
+            <Section id="jump03" eng="Gallery" jpn="ギャラリー" wrap={true}>
                 <ul className={styles.gallery_list}>
                     
                 {GalleryInfo.map((photo, index) => (

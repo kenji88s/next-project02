@@ -8,10 +8,11 @@ type Props = {
     eng?: string;
     jpn?: string;
     msg?: string;
+    wrap?: boolean;
     children?: React.ReactNode;
 }
 
-export default function Section({ id, eng, jpn, children, msg }: Props) {
+export default function Section({ id, eng, jpn, children, msg, wrap }: Props) {
     return (        
         <section className={styles.section} {...(id ? { id } : {})}>
             <div className={styles.section_inner}>
@@ -22,9 +23,7 @@ export default function Section({ id, eng, jpn, children, msg }: Props) {
                     </h2>
                 ) : null}
                 {msg && <div className={styles.section_msg}>{msg}</div>}
-                <div className={styles.section_contents}>
-                    {children}
-                </div>
+                {wrap ? (<div className={styles.section_contents}>{children}</div>) : (children)}
             </div>
         </section>
     );

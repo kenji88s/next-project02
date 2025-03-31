@@ -12,7 +12,7 @@ type Props = {
 export default function Section({ children }: Props) {
 
     const pathname = usePathname(); // 現在のページのパスを取得
-    const pageId = pathname === "/" ? "home" : pathname.replace(/\//g, "-").replace(/^-/, "");
+    const pageId = pathname === "/" ? "index" : pathname.replace(/\//g, "-").replace(/^-/, "");
 
     return (
         <body id={pageId}>{children}</body>

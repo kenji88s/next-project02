@@ -6,7 +6,7 @@ import { contTechnique } from "../../_data/info-service";
 
 export default function Technique() {
     return (
-        <Section id="jump02" eng="Technique" jpn="私たちの技術">
+        <Section id="jump02" eng="Technique" jpn="私たちの技術" wrap={true}>
             <ul className={styles.technique_list}>
                 {contTechnique.contents.map((detail, index) => (
                     <li key={index}>

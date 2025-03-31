@@ -26,6 +26,7 @@
   z-index: 1;
   color: #2d3e50;
   text-decoration: none;
+  margin-top: -60px;
 }
 
 @media (max-width: 480px) {
@@ -103,6 +104,4 @@
 .return[data-state="visible"] {
   opacity: 1;
   pointer-events: all;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
 }
