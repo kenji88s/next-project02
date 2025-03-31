@@ -53,15 +53,27 @@ export default function HeaderNav() {
   };
 
   return (
-    <nav id="gnavi" className={isMobile ? "mobile-nav" : "desktop-nav"}>
-      <ul>
-        {pages.map((btn, index) => (
-            <li key={index}><Link href={btn.href}>{btn.title}</Link></li>
-        ))}
+    <>
+      <nav id="gnavi" className={isMobile ? "mobile-nav" : "desktop-nav"}>
+        <ul>
+          {pages.map((btn, index) => (
+              <li key={index}><Link href={btn.href}>{btn.title}</Link></li>
+          ))}
+        </ul>
+        {isMobile && (
+          <div id="close" onClick={closeGnavi}>CLOSE<span>×</span></div>
+        )}
+      </nav>
+      <ul id="sp_navi">
+        <li onClick={openGnavi}>
+          <Image
+            src="/open-navi.png"
+            alt=""
+            width={60}
+            height={60}
+          />
+        </li>
       </ul>
-      {isMobile && (
-        <div id="close" onClick={closeGnavi}>CLOSE<span>×</span></div>
-      )}
-    </nav>
+    </>
   );
 }

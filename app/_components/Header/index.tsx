@@ -32,17 +32,6 @@ export default function Header() {
           </Link>
         </div>
         <Gnavi />
-        
-        <ul id="sp_navi">
-          <li className={styles.gnavi_open}>
-            <Image
-              src="/open-navi.png"
-              alt=""
-              width={60}
-              height={60}
-            />
-          </li>
-        </ul>
       </div>
     </header>
   );
