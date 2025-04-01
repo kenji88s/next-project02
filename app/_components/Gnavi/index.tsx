@@ -52,13 +52,20 @@ export default function HeaderNav() {
       document.body.appendChild(underlay);
       underlay.addEventListener("click", closeGnavi);
     }
+
+    const gnavi = document.getElementById("gnavi");
+    const page = document.getElementById("page");
+    if (gnavi && page?.parentNode) {
+      page.parentNode.insertBefore(gnavi, page.nextSibling);
+    }
+
     document.getElementById("page")?.setAttribute("data-state", "open");
     document.querySelector(".gnavi")?.setAttribute("data-state", "open");
   };
 
   return (
     <>
-      <nav className={styles.gnavi} data-mode={isMobile ? "mobile-nav" : "desktop-nav"}>
+      <nav className={styles.gnavi} data-mode={isMobile ? "mobile-nav" : "desktop-nav"} id="gnavi">
         <ul>
           {pages.map((btn, index) => (
               <li key={index}><Link href={btn.href}>{btn.title}</Link></li>

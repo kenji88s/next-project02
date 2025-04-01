@@ -142,7 +142,7 @@
         line-height: 1.3;
         font-weight: bold;
     }
-    .gnavi[data-mode="mobile-nav"] a[href="inquiry.html"] {
+    .gnavi[data-mode="mobile-nav"] a[href="/inquiry"] {
         background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTEuOTA3cHgiIGhlaWdodD0iMjAuNDFweCIgdmlld0JveD0iMCAwIDExLjkwNyAyMC40MSI+DQo8cGF0aCBpZD0iYXJyb3ciIGZpbGw9IiNGRkZGRkYiIGQ9Ik00LjcxOSwyMC40MUgtMC4wMUw3LjE2NSwxMC4yTC0wLjAxMS0wLjAxaDQuNzI5bDcuMjAxLDEwLjIxTDQuNzE5LDIwLjQxeiIvPg0KPC9zdmc+") no-repeat right 10% center #000;
         background-size: 7px auto;
         border: none;
