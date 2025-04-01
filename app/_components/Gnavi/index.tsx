@@ -39,7 +39,7 @@ export default function HeaderNav() {
   // ナビゲーションを閉じる処理
   const closeGnavi = () => {
     document.getElementById("page")?.removeAttribute("data-state");
-    document.querySelector(".gnavi")?.removeAttribute("data-state");
+    document.getElementById("gnavi")?.removeAttribute("data-state");
     const drawerUnderlay = document.getElementById("drawer_underlay");
     drawerUnderlay?.remove();
   };
@@ -60,7 +60,7 @@ export default function HeaderNav() {
     }
 */
     document.getElementById("page")?.setAttribute("data-state", "open");
-    document.querySelector(".gnavi")?.setAttribute("data-state", "open");
+    document.getElementById("gnavi")?.setAttribute("data-state", "open");
   };
 
   return (
