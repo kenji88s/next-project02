@@ -38,7 +38,8 @@ export default function HeaderNav() {
 
   // ナビゲーションを閉じる処理
   const closeGnavi = () => {
-    document.getElementById("gnavi")?.removeAttribute("data-state");
+    document.getElementById("page")?.removeAttribute("data-state");
+    document.querySelector(".gnavi")?.removeAttribute("data-state");
     const drawerUnderlay = document.getElementById("drawer_underlay");
     drawerUnderlay?.remove();
   };
@@ -51,7 +52,8 @@ export default function HeaderNav() {
       document.body.appendChild(underlay);
       underlay.addEventListener("click", closeGnavi);
     }
-    document.getElementById("gnavi")?.setAttribute("data-state", "open");
+    document.getElementById("page")?.setAttribute("data-state", "open");
+    document.querySelector(".gnavi")?.setAttribute("data-state", "open");
   };
 
   return (
@@ -63,7 +65,7 @@ export default function HeaderNav() {
           ))}
         </ul>
         {isMobile && (
-          <div id="close" onClick={closeGnavi}>CLOSE<span>×</span></div>
+          <div className={styles.close} onClick={closeGnavi}>CLOSE<span>×</span></div>
         )}
       </nav>
       <ul id="sp_navi">

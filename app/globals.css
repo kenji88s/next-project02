@@ -14,7 +14,7 @@
 }
 
 @media (max-width: 480px) {
-  #page.open {
+  #page[data-state="open"] {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     position: fixed;
