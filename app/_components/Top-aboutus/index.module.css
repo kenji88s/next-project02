@@ -1,7 +1,7 @@
 
 
 .top_aboutus {
-  padding: 200px 0 100px;
+  padding: 200px 0 130px;
   background: url(/top_aboutus_bg.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
@@ -9,7 +9,7 @@
 
 @media (max-width: 480px) {
   .top_aboutus {
-    padding: 30vw 3vw 15vw;
+    padding: 30vw 3vw 21vw;
   }
 }
 
@@ -74,7 +74,7 @@
   }
 }
 
-.top_aboutus_title span.jpn {
+[class*="top_aboutus_title"] span.jpn {
   margin-bottom: 10px;
 }
 

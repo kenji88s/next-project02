@@ -141,7 +141,7 @@
 }
 
 
-#index .footer,
+body[id*="ndex"] .footer,
 body[id*="contents"] .footer {
   border-top: none;
 }

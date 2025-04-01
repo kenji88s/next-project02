@@ -1,12 +1,12 @@
 
 .privacy_section {
-  padding: 50px 0 70px;
+  padding: 50px 0 100px;
   background: url(/background_img01.png) no-repeat left bottom #fff;
 }
 
 @media (max-width: 480px) {
   .privacy_section {
-    padding: 10vw 0;
+    padding: 10vw 0 16vw;
     background-size: 80% auto;
   }
 }
