@@ -38,6 +38,16 @@ body[id*="inquiry2"] .section:last-child {
   margin-bottom: 0;
 }
 
+body[id*="contents1"] .section:last-child {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+  body[id*="contents1"] .section:last-child {
+    margin-bottom: 6vw;
+  }
+}
+
 @media (max-width: 480px) {
   body[id*="contents"] .section:last-child,
   body[id*="inquiry2"] .section:last-child {

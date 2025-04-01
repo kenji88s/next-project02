@@ -27,6 +27,14 @@
   }
 }
 
+.table_base table th {
+  text-align: left;
+  width: 28%;
+  position: relative;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
 .table_base table td {
   border-bottom: 1px solid #999;
 }
@@ -67,18 +75,10 @@
 }
 
 @media (max-width: 480px) {
-  .table_base table tbody tr {
+  .table_base table tr {
     display: block;
   }
-  .table_base table tbody tr:not(:last-child) {
+  .table_base table tr:not(:last-child) {
     margin-bottom: 20px;
   }
-}
-
-.table_base table tbody th {
-  text-align: left;
-  width: 28%;
-  position: relative;
-  border-bottom: 1px solid #000;
-  color: #000;
 }

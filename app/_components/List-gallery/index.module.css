@@ -35,6 +35,12 @@
   margin-top: 30px;
 }
 
+@media (max-width: 480px) {
+  .gallery_list li:nth-child(n + 4) {
+    margin-top: 0px;
+  }
+}
+
 .gallery_list li > div{
   position: relative;
   overflow: hidden;

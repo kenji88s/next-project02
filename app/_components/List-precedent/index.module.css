@@ -35,6 +35,12 @@
   margin-top: 50px;
 }
 
+@media (max-width: 480px) {
+  .precedent_list li:nth-child(n + 4) {
+    margin-top: 0px;
+  }
+}
+
 .precedent_list img {
   display: block;
   width: 100%;
