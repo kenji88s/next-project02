@@ -52,13 +52,13 @@ export default function HeaderNav() {
       document.body.appendChild(underlay);
       underlay.addEventListener("click", closeGnavi);
     }
-
+/*
     const gnavi = document.getElementById("gnavi");
     const page = document.getElementById("page");
     if (gnavi && page?.parentNode) {
       page.parentNode.insertBefore(gnavi, page.nextSibling);
     }
-
+*/
     document.getElementById("page")?.setAttribute("data-state", "open");
     document.querySelector(".gnavi")?.setAttribute("data-state", "open");
   };
