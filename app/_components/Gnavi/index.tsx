@@ -59,6 +59,13 @@ export default function HeaderNav() {
       page.parentNode.insertBefore(gnavi, page.nextSibling);
     }
 
+    if (gnavi) {
+      const buttons = gnavi.querySelectorAll("a"); // aタグをすべて取得
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", closeGnavi);
+      });
+    }
+
     document.getElementById("page")?.setAttribute("data-state", "open");
     document.getElementById("gnavi")?.setAttribute("data-state", "open");
   };
