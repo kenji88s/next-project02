@@ -31,3 +31,7 @@ h1[class*="top_"] span.jpn {
     font-size: 1.7rem;
   }
 }
+
+h1[class*="top_aboutus_"] span.jpn {
+  margin-bottom: 10px;
+}
