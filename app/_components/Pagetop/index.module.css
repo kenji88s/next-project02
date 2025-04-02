@@ -106,6 +106,6 @@
   pointer-events: all;
 }
 
-#contents:has(.__react_modal_image__modal_container) + .return {
+#contents:has([class*="react_modal"]) + .return {
   display: none;
 }
