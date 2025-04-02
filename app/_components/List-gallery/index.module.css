@@ -2,6 +2,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
@@ -11,37 +12,9 @@
 
 .gallery_list li {
   width: 320px;
-  margin-right: 30px;
 }
 
-@media (max-width: 480px) {
-  .gallery_list li {
-    width: 48%;
-    margin: 0 4% 0 0;
-  }
-  .gallery_list li:nth-child(2n) {
-    margin-right: 0;
-  }
-  .gallery_list li:nth-child(n+3) {
-    margin-top: 4%;
-  }
-}
-
-.gallery_list li:nth-child(3n), .gallery_list li:last-child {
-  margin-right: 0;
-}
-
-.gallery_list li:nth-child(n + 4) {
-  margin-top: 30px;
-}
-
-@media (max-width: 480px) {
-  .gallery_list li:nth-child(n + 4) {
-    margin-top: 4%;
-  }
-}
-
-.gallery_list li > div{
+.gallery_list li > div {
   position: relative;
   overflow: hidden;
   background: url(/overlay.png) #000000;
@@ -73,14 +46,6 @@
   padding: 0 0 2px 3px;
 }
 
-@media (max-width: 480px) {
-  .gallery_list li > div::after {
-    width: 24px;
-    height: 24px;
-    font-size: 16px;
-    padding: 0 0 1px;
-  }
-}
 
 .gallery_list li > div > img {
   -webkit-transition: 0.5s;
@@ -89,20 +54,30 @@
   width: 100%;
 }
 
-@media (max-width: 480px) {
-  .gallery_list li > div > img {
-    -webkit-transition: unset;
-    transition: unset;
-  }
-}
-
 .gallery_list li > div:hover > img {
   opacity: 0.6;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
+
 @media (max-width: 480px) {
+  .gallery_list {
+    gap: 4%;
+  }
+  .gallery_list li {
+    width: 48%;
+  }
+  .gallery_list li > div::after {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    padding: 0 0 1px;
+  }
+  .gallery_list li > div > img {
+    -webkit-transition: unset;
+    transition: unset;
+  }
   .gallery_list li > div:hover > img {
     opacity: 1;
     -webkit-transform: unset;
