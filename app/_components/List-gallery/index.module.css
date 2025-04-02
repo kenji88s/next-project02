@@ -63,7 +63,7 @@
 
 @media (max-width: 480px) {
   .gallery_list {
-    gap: 4%;
+    gap: calc(94vw * 0.4) 4%;
   }
   .gallery_list li {
     width: 48%;

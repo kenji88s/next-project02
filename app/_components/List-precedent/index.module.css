@@ -54,8 +54,8 @@
 }
 
 @media (max-width: 480px) {
-  .precedent_list li {
-    gap: 8% 4%;
+  .precedent_list {
+    gap: calc(94vw * 0.4 * 2) 4%;
   }
 
   .precedent_list li {
