@@ -37,7 +37,7 @@
 
 @media (max-width: 480px) {
   .gallery_list li:nth-child(n + 4) {
-    margin-top: 0px;
+    margin-top: 4%;
   }
 }
 

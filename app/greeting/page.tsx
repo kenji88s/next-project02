@@ -60,7 +60,7 @@ export default function Page() {
             </tr>
             <tr>
               <th>TEL・FAX</th>
-              <td className={styles.tel}><Link href={`tel:${CompanyInfo.contents["電話番号"]}`}>{CompanyInfo.contents["電話番号"]}</Link></td>
+              <td className="tel"><Link href={`tel:${CompanyInfo.contents["電話番号"]}`}>{CompanyInfo.contents["電話番号"]}</Link></td>
             </tr>
           </table>
         </div>

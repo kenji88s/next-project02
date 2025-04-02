@@ -13,6 +13,18 @@
   }
 }
 
+.table_base table th {
+  text-align: left;
+  width: 28%;
+  position: relative;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.table_base table td {
+  border-bottom: 1px solid #999;
+}
+
 .table_base table td,
 .table_base table th {
   padding: 25px 40px;
@@ -25,18 +37,6 @@
     display: block;
     width: 100%;
   }
-}
-
-.table_base table th {
-  text-align: left;
-  width: 28%;
-  position: relative;
-  border-bottom: 1px solid #000;
-  color: #000;
-}
-
-.table_base table td {
-  border-bottom: 1px solid #999;
 }
 
 @media (max-width: 480px) {
