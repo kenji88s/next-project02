@@ -5,7 +5,10 @@ export function middleware(request: NextRequest) {
   return nextBasicAuthMiddleware(
     {
       users: [
-        { name: "admin", password: "password" },
+        {
+          name: process.env.BASIC_AUTH_USER || "admin",
+          password: process.env.BASIC_AUTH_PASS || "password",
+        },
       ],
     },
     request
